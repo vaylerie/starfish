@@ -71,3 +71,39 @@ body {
     max-width: 600px;
     text-align: center;
 }
+
+/* Result Section */
+.result-container {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.result-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.result-container #predicted-class {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Description Section */
+.description-container {
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.description-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.description-container .description-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
