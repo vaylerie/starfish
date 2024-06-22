@@ -1,88 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: Poppins, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
 }
 
-h1 {
-    margin-top: 20px;
-}
-
-form {
+.hero-section {
+    background-image: url('/static/images/luidia_foliolata.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    text-align: center;
+    color: white;
 }
 
-label {
-    margin-bottom: 10px;
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
-input, button {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.upload-form {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.upload-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.upload-form input[type="file"] {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button {
-    background-color: #007BFF;
+.upload-form button {
+    padding: 1rem 2rem;
+    background-color: #0059b9;
     color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+    font-size: 1.2rem;
+    margin-left: 1rem;
 }
 
 #result {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 #description {
-    margin-top: 20px;
-    font-size: 16px;
+    margin-top: 2rem;
+    font-size: 1.2rem;
     max-width: 600px;
     text-align: center;
-}
-
-.slideshow-container {
-    width: 800px; /* Set the width of the slideshow */
-    height: 400px; /* Set the height of the slideshow */
-    position: relative;
-    margin: auto;
-    margin-top: 20px;
-    overflow: hidden; /* Hide overflow to keep images within bounds */
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #000;
-}
-
-.mySlides {
-    display: none;
-    width: 100%;
-    height: 100%;
-}
-
-.mySlides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire area */
-}
-
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
 }

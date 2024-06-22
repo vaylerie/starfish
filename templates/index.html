@@ -7,32 +7,24 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="/static/images/protoreaster_nodosus.jpg" style="width:100%">
-            <div class="text">Protoreaster nodosus</div>
+    <section class="hero-section">
+        <div>
+            <h1>Identify Your Starfish!</h1>
+            <p>Identify starfish types with one click.</p>
         </div>
-        <div class="mySlides fade">
-            <img src="/static/images/culcita_novaguineae.jpg" style="width:100%">
-            <div class="text">Culcita novaguineae</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="/static/images/linckia_laevigata.jpg" style="width:100%">
-            <div class="text">Linckia laevigata</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="/static/images/luidia_foliolata.jpeg" style="width:100%">
-            <div class="text">Luidia foliolata</div>
-        </div>
+    </section>
+
+    <div class="upload-form">
+        <form id="prediction-form" enctype="multipart/form-data">
+            <label for="file">Upload Image:</label>
+            <input type="file" id="file" name="file" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
     </div>
-    <h1>Starfish Classification</h1>
-    <form id="prediction-form" enctype="multipart/form-data">
-        <label for="file">Upload Image:</label>
-        <input type="file" id="file" name="file" accept="image/*" required>
-        <button type="submit">Predict</button>
-    </form>
+
     <div id="result"></div>
     <div id="description"></div>
+
     <script src="/static/js/main.js"></script>
 </body>
 </html>
