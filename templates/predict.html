@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Starfish</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/static/img/favicon.png" rel="icon" />
+    <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="/static/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="/static/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="/static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="/static/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/static/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Reveal - v4.8.0
+  * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+        <div id="logo">
+          <h1>
+            <h1><a href="/">Starfish<span>.id</span></a></h1>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="static/img/logo.png" alt=""></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="/">Home</a></li>
+            <li><a class="nav-link scrollto" href="/">About</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= pred Section ======= -->
+      <section id="pred" class="pred section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header back-home">
+            <a href="/"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="48"
+                height="48"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm0-9h4v2h-4v3l-4-4 4-4v3z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg text-center text-lg-center">
+              <h4>Identification Result: <span><em>{{result}}</em></span></h4>
+            </div>
+          </div>
+         
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{{gambar}}" alt="" class="img-fluid" />
+                <h4>The image you input is identified as <span><em>{{hasil}}</em></span></h4>
+                <div>
+                  {% if result == 'Culcita novaguineae' %}
+                  <p><em>Culcita novaguineae</em>, commonly known as the cushion star, is a species of starfish found in the Indo-Pacific region. They are known for their cushion-like shape and come in various colors, including green, brown, and yellow. These starfish have a thick, inflated body with short, blunt arms and are often found in coral reefs and seagrass beds. They primarily feed on detritus and small invertebrates.</p>
+                  {% elif result == 'Linckia laevigata' %}
+                  <p><em>Linckia laevigata</em>, also known as the blue starfish, is a species of starfish found in the shallow waters of the Indo-Pacific. This species is easily recognizable by its bright blue color, though it can also appear in shades of green, pink, and yellow. They typically have five arms that can regenerate if damaged. They are often found on coral reefs and rocky areas, feeding on algae and detritus.</p>
+                  {% elif result == 'Luidia foliolata' %}
+                  <p><em>Luidia foliolata</em>, or the sand starfish, is commonly found in sandy or muddy areas of the Pacific Ocean. This species is characterized by its long, slender arms and its ability to quickly burrow into the substrate to avoid predators. They are highly mobile and primarily feed on small invertebrates, such as bivalves and worms, using their tube feet to capture prey.</p>
+                  {% elif result == 'Protoreaster nodosus' %}
+                  <p><em>Protoreaster nodosus</em>, commonly known as the horned starfish, is notable for its hard, knobby surface and prominent conical spines. It inhabits shallow seagrass beds and coral reefs in the Indo-Pacific region. This species has a striking appearance with its vibrant colors, including red, orange, and brown, and its large, pointed spines provide protection from predators. They primarily feed on algae, detritus, and small invertebrates.</p>
+                  {% else %}
+                  <p>Starfish species not recognized. Please try again with a clearer image.</p>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>      
+          
+        </div>
+      </section>
+      <!-- End Team Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="/static/vendor/aos/aos.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/static/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/static/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>
